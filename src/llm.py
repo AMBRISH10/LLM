@@ -12,7 +12,7 @@ messages = [
 ]
 
 
-def ask_order(messages, model="mistralai/Mixtral-8x7B-Instruct-v0.1",temperature=0):
+def ask_order(messages, model="togethercomputer/llama-2-70b-chat",temperature=0):
     response = client.chat.completions.create(
         model= model,
         messages=  messages,

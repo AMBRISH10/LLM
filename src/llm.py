@@ -16,7 +16,7 @@ def ask_order(messages, model="togethercomputer/llama-2-70b-chat",temperature=0)
     response = client.chat.completions.create(
         model= model,
         messages=  messages,
-        temperature= temperature 
+        temperature= 0.2 
     )
 
     return response.choices[0].message.content
